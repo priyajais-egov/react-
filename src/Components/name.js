@@ -8,7 +8,7 @@ render() {
         <Card>
             <CardContent>
                 <b>PRIYA   JAISWAL </b><br></br>
-                  Software Developer <br></br>
+                  Software Engineer <br></br>
             </CardContent>
         </Card>
     );

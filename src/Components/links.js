@@ -8,7 +8,7 @@ render() {
         <Card>
             <CardContent>
                 <b>Links Works:</b><br></br>
-                https://egov-micro-dev.egovernments.org/citizen/<br></br>
+                priya.jaiswal@egovernments.org<br></br>
             </CardContent>
         </Card>
     );
