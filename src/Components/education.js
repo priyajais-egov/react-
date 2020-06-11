@@ -4,15 +4,15 @@ import { CardContent } from '@material-ui/core';
 
 export default class Education extends Component {
 render() {
+    const {education}= this.props;
+    const {lang=[]}= this.props;
     return (
         <Card>
             <CardContent>
                 <b>Education Works :</b><br></br>
-                faggs<br></br>
-                aggsggshd<br></br>
+                {education}<br></br>
                 <b>Languages :</b><br></br>
-                hindi<br></br>
-                english<br></br>
+                { lang.map(list => <li key={list}> {list} </li>) }
             </CardContent>
         </Card>
     );

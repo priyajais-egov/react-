@@ -4,14 +4,12 @@ import { CardContent } from '@material-ui/core';
 
 export default class Hobbies extends Component {
 render() {
+    const {hobbies}= this.props;
     return (
         <Card>
             <CardContent>
                 <b>Hobbies Works:</b><br></br>
-                cooking<br></br>
-                travelling<br></br>
-                shopping<br></br>
-                Photography<br></br>
+                {hobbies.map(list => <li key={list}> {list} </li>)}
             </CardContent>
         </Card>
     );

@@ -4,15 +4,12 @@ import { CardContent } from '@material-ui/core';
 
 export default class Skills extends Component {
 render() {
+    const {skills}= this.props;
     return (
         <Card>
             <CardContent>
                 <b>Skills Works:</b><br></br>
-                Java , Angular JS, Web Services (SOAP, WSDL, REST API), STRUTS, Spring Framework, Spring Boot, Spring Cloud
-                <br></br>
-                Pivotal Cloud Fundry, AWS 
-                <br></br>
-                Rabbit MQ, Kafka, Zookeeper
+                {skills.map(list => <li key={list}> {list} </li>)}
             </CardContent>
         </Card>
     );

@@ -4,11 +4,12 @@ import { CardContent } from '@material-ui/core';
 
 export default class Links extends Component {
 render() {
+    const {link}= this.props;
     return (
         <Card>
             <CardContent>
                 <b>Links Works:</b><br></br>
-                priya.jaiswal@egovernments.org<br></br>
+                {link[0]}<br></br>
             </CardContent>
         </Card>
     );
