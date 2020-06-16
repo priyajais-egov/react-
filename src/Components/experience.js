@@ -10,7 +10,7 @@ render() {
             <CardContent>
             <b>Experience Works:</b><br></br>
                 {experience.map(item => (
-                    <h6>{item.key}:&nbsp;{item.value}</h6>
+                    <h6 key={item.value}>{item.key}:&nbsp;{item.value}</h6>
                 ))} 
             </CardContent>
         </Card>
